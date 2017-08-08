@@ -7,7 +7,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -48,15 +48,26 @@ nav {
 
 .dropdown {
   display: none;
-  background-color: #fff;  
+  background-color: #fff;
+  border-radius: 0 .0 .5rem .5rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  margin: auto;
+  padding: 1rem 4rem 1rem 2rem;
 }
 
 .dropdown ul {
   list-style: none;
+  padding: 0;
 }
 
 .dropdown li a {
   text-decoration: none;
+}
+
+.dropdown li {
+  margin-bottom: 1rem;
 }
 
 .jumbotron {
