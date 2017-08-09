@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var buttons = document.querySelectorAll('.read-more');
 
-  function showHide(event) {
+  function showHide() {
 
     var textArea = this.previousElementSibling;
 
