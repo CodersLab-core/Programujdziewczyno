@@ -301,3 +301,7 @@ footer p {
   color: #424343;
   margin-top: 3rem;
 }
+
+ .more {
+  display: none;
+} 
