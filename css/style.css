@@ -284,3 +284,15 @@ nav {
 .dot:hover {
   background-color: #ea6c56;
 }
+
+footer {
+  margin-top: 4rem;
+  background-color: #44ca85;
+  height: 10rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #424343;
+  margin-top: 3rem;
+}
