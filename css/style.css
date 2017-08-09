@@ -296,3 +296,17 @@ footer p {
   color: #424343;
   margin-top: 3rem;
 }
+
+.back-to-top {
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #44ca85;
+  border-radius: 1rem;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  display: none;
+}
