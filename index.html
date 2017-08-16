@@ -8,6 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700|Montserrat:400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/5-slider-with-dots.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
@@ -106,7 +107,7 @@
           </div>
           <div class="col-sm-6">
             <ul class="slider">
-              <li class="org">
+              <li class="org visible">
                 <h5><a href="https://coderslab.pl/" target="_blank">Coders Lab</br>Szkoła Programowania</a></h5>
                 <p>
                   Szkoła programowania, dzięki której nawet osoby bez doświadczenia w programowaniu mogą 
@@ -119,22 +120,23 @@
                 <p>
                   Blog o nauce programowania i początkach w branży IT. Motywacja, materiały do nauki,
                   zachęcanie dziewczyn do spróbowania swoich sił w kodowaniu. Przemyślenia humanistki, 
-                  która postanowiła zostać programistką. I jej się udało.
+                  która postanowiła zostać programistką. I jej się udało. Dla tych, którzy nie wiedzą, 
+                  od czego zacząć naukę. 
                 </p>
               </li>
               <li class="org">
-                <h5><a href="https://github.com/CodersLab-core/Programujdziewczyno" target="_blank">Programuj, dziewczyno!</br>Grupa motywacyjna</a></h5>
+                <h5><a href="https://www.facebook.com/groups/programujdziewczyno/" target="_blank">Programuj, dziewczyno!</br>Grupa motywacyjna</a></h5>
                 <p>
                   Grupa dla dziewczyn, które chcą zacząć swoją przygodę z programowaniem albo już kodują.
-                  Materiały, wsparcie i motywacja w dziewczyńskim gronie.
-                  Bo każda z nas może sprawdzić, na czym polega kodowanie!
+                  Materiały, wsparcie i motywacja w dziewczyńskim gronie. Obecnie grupa liczy już ponad 3500 dziewczyn
+                  i nieprzerwanie tętni życiem i nowymi pomysłami.
                 </p>
-              </li>
+              </li> 
             </ul>
-            <div class="dots col-sm-4 col-sm-offset-4">
-              <div class="dot active"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
+            <div class="dots col-sm-5 col-sm-offset-4">
+              <div class="dot active" id="dot1"></div>
+              <div class="dot" id="dot2"></div>
+              <div class="dot" id="dot3"></div>
             </div>
           </div>
         </div>

@@ -301,3 +301,15 @@ footer p {
   color: #424343;
   margin-top: 3rem;
 }
+
+.slider {
+  list-style: none;
+}
+
+.slider li {  
+  display: none;  
+}
+
+.slider .visible {
+  display: inline-block;
+}
