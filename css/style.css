@@ -275,6 +275,7 @@ nav {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .dot.active {
@@ -295,4 +296,16 @@ footer p {
   font-size: 1.2rem;
   color: #424343;
   margin-top: 3rem;
+}
+
+.slider {
+  list-style: none;
+}
+
+.slider li {  
+  display: none;  
+}
+
+.slider .visible {
+  display: inline-block;
 }
