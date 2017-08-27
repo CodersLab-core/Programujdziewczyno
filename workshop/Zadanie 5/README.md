@@ -28,7 +28,7 @@ Naszym celem jest napisanie obsługi slidera, który sprawi, że po kliknięciu 
 10. Teraz po kliknięciu w kropkę wszystkie kropki tracą klasę `active`, a wszystkie opisy klasę `visible`. Niekoniecznie o to nam chodziło. Musimy przecież jeszcze przypisać te klasy do odpowiednich elementów. Najpierw zajmiemy się kropką - wykorzstamy zmienną `this`, która w naszym przypadku oznacza kropkę, w którą kliknięliśmy. Korzystając z `this` dodaj do kropki klasę `active`. Pamiętaj, by zrobić to pod pętlą `for`, nie wewnątrz niej. Chcemy by najpierw wykonał się kod w pętli, a potem dopiero nadajemy klasy. 
 11. Zostało nam nadanie klasy `visible` odpowiedniemu opisowi. W prostszej wersji naszej rozwiązania po prostu wybierz odpowiedni element tablicy z opisami, czyli w przypadku pierwszej kropki `items[0]` i nadaj mu klasę `visible`. 
 12. Teraz wykonaj powyższe punkty dla drugiej i trzeciej kropki. Odpowiednio zmień kod, żeby klasy dodawały się do drugiej kropki i drugiego opisu itd.
-13. Efektem naszej pracy są trzy funkcje przypisane do trzech różnych kropek. Kod działa tak, jak powinien, ale powtarzamy jego część. Dlatego teraz przypiszemy funkcję do wszystkich kropek za jednym zamachem. To zadanie jest trudniejsze ponieważ skorzystamy z tzw. `IIFE`, czyli `Immediately Invoked Function Expression`. Będzie to funckja wywoływana od razu po zdeklarowaniu. Zaraz zobaczysz, jak to wygląda w praktyce. Nie przejmuj się, jeśli nie uda Ci się dokładnie rozumieć całego mechanizmu działania. To naprawdę zaawansowany temat :)
+13. Efektem naszej pracy są trzy funkcje przypisane do trzech różnych kropek. Kod działa tak, jak powinien, ale powtarzamy jego część. Dlatego teraz przypiszemy funkcję do wszystkich kropek za jednym zamachem. To zadanie jest trudniejsze ponieważ skorzystamy z tzw. `IIFE`, czyli `Immediately Invoked Function Expression`. Będzie to funkcja wywoływana od razu po zdeklarowaniu. Zaraz zobaczysz, jak to wygląda w praktyce. Nie przejmuj się, jeśli nie uda Ci się dokładnie rozumieć całego mechanizmu działania. To naprawdę zaawansowany temat :)
 14. Na sam początek zakomentuj rozwiązanie, które przed chwilą zapisałaś. Stwórz teraz pętlę, która przejdzie przez tablicę kropek. Powinnaś mieć taki kod:
 ```javascript
     for(var i = 0; i <= dots.length; i++) {
@@ -46,7 +46,7 @@ Naszym celem jest napisanie obsługi slidera, który sprawi, że po kliknięciu 
 ```javascript
     dots[i].addEventListener('click', function() {
 
-    });
+    }
 ```
 18. To, co osiągnęliśmy to przypisanie `listenera` do kropek przy jednoczesnym zachowaniu indeksu. Wewnątrz funkcji wykonującej się na `click` dodaj poniższy kod i sprawdź konsolę po kliknięciu w kropki.
 ```javascript
