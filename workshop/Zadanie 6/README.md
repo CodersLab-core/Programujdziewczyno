@@ -8,7 +8,7 @@
 
 ## Cel zadania
 
-Naszym celem jest napisanie obsługi listy zadań znajdującej się w sekcji Plan działania. Chcemy umożliwić użytkownikowi dodanie zadań do listy. W ramach zadań dodatkowych umożliwimy też usuwanie, oznaczanie zadań jako wykonane oraz dodamy walidację pola służącego do wpisywania zadania.
+Naszym celem jest napisanie obsługi listy zadań znajdującej się w sekcji Plan działania. Chcemy umożliwić użytkownikowi dodanie zadań do listy. Dodatkowo umożliwimy też usuwanie zadań, oznaczanie zadań jako wykonane oraz dodamy walidację pola służącego do wpisywania zadania.
 
 ## Instrukcja
 
@@ -16,10 +16,10 @@ Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nic
 
 ## Dodawania zadania do listy
 
-1. JS pozwala nam nie tylko pracować na istniejących już elementach strony, ale także dodawać elementy albo je usuwać. I to zupełnie ze struktury DOM, a nie tylko przez zabranie im wartości `display`. Właśnie to wykorzystamy w trakcie tego zadania.
+1. JS pozwala nam nie tylko pracować na istniejących już elementach strony, ale także dodawać elementy albo je usuwać. Właśnie to wykorzystamy w trakcie tego zadania.
 2. Najpierw przeanalizuj kod HTML. Zobacz, gdzie znajduje się lista, jakie klasy mają elementy, które będą nam potrzebne do obsługi listy zadań. 
 3. Stwórz trzy zmienne: przycisk, który będzie dodawał elementy do listy, listę zadań oraz input, do którego wprowadzamy treść zadania i przypisz do nich odpowiednie elementy HTML. Zrób `console.log` i sprawdź, czy wszystkie zmienne są przypisane prawidłowo.
-4. W tym zadaniu wykorzystamy wcześniej już pokazany sposób przypisywania konkretnych funkcji jako `callback`. Będziemy więc tworzyć funckje z opdowiednimi nazwami, a potem dopiero podawać je jako argument dla `eventListenera`.
+4. W tym zadaniu wykorzystamy wcześniej już pokazany sposób przypisywania konkretnych funkcji jako `callback`. Będziemy więc tworzyć funkcje z odpowiednimi nazwami, a potem dopiero podawać je jako argument dla `eventListenera`.
 5. Stwórz funckję `addTask()` i następnie podaj ją jako `callback` dla `eventListenera` równego `click` dla przycisku. Twój kod powinien wyglądać w ten sposób:
 ```javascript
     function addTask() {
@@ -28,7 +28,7 @@ Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nic
 
     button.addEventListener('click', addToList);
 ```
-6. Po kliknięciu w przycisk do listy ma zostać dodane zadanie, którego treść jest równa zawartości wpisanej do inputu. Pierwsza rzecz jakąs musimy zrobić jest stworzenie nowego elementu listy. Zrobimy to używając `document.createElement('znacznik HTML')`. Przypiszmy ten element do odpowiedniej zmiennej, np:
+6. Po kliknięciu w przycisk do listy ma zostać dodane zadanie, którego treść jest równa zawartości wpisanej do inputu. Pierwszą rzeczą jaką musimy zrobić jest stworzenie nowego elementu listy. Zrobimy to używając `document.createElement('znacznik HTML')`. Przypiszmy ten element do odpowiedniej zmiennej, np:
 ```javascript
     var newTask = document.createElement('li');
 ```
