@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // Read more/less
-
   var buttons = document.querySelectorAll('.read-more');
 
   function showHide() {
