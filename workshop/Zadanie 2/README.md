@@ -12,8 +12,8 @@ Naszym celem jest sprawienie, by po kliknięciu w przycisk `Więcej` rozwijał s
 
 ## Instrukcja
 
-1. Poszukaj w kodzie HTML przycisków `Więcej` i zapisz je wszystkie do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Wyświetl zmienną w konsoli - powinnaś zobaczyć tablicę z trzema przyciskami.
-2. Nad każdym przyciskiem znajduje się paragraf o klasie `more`. Przycisk oraz paragraf mają tego samego rodzica, którym jest nadrzędny dla nich `section`. Są więc rodzeństwem. W JS możemy to wykorzystać. Po kliknięciu w przycisk ma pojawiać się jego poprzedni brat (albo siostra ;)). Żeby sprawdzić, czy faktycznie tak to zadziała, wypisz w konsoli rodzeństwo pierwszego elementu tablicy z przyciskami w ten sposób:
+1. Poszukaj w kodzie HTML przycisków `Więcej`. Nad każdym z nich widzisz teraz dwa paragrafy. Jeden z nich ma klasę `more`. Ukryj wszystkie paragrafy o klasie `more` przez zmianę w `display` na `none` w pliku CSS. Nastepnie w pliku JS zapisz wszystkie przyciski `Więcej` do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Wyświetl zmienną w konsoli - powinnaś zobaczyć tablicę z trzema przyciskami.
+2. Nad każdym przyciskiem znajduje się paragraf o klasie `more` (mimo że teraz jest niewidoczny). Przycisk oraz paragraf mają tego samego rodzica, którym jest nadrzędny dla nich `section`. Są więc rodzeństwem. W JS możemy to wykorzystać. Po kliknięciu w przycisk ma pojawiać się jego poprzedni brat (albo siostra ;)). Żeby sprawdzić, czy faktycznie tak to zadziała, wypisz w konsoli rodzeństwo pierwszego elementu tablicy z przyciskami w ten sposób:
 ```javascript
     console.log(buttons[0].previousElementSibling);
 ```
