@@ -16,8 +16,8 @@ Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nic
 
 ## Dodawania zadania do listy
 
-1. JS pozwala nam nie tylko pracować na istniejących już elementach strony, ale także dodawać elementy albo je usuwać. Właśnie to wykorzystamy w trakcie tego zadania.
-2. Najpierw przeanalizuj kod HTML. Zobacz, gdzie znajduje się lista, jakie klasy mają elementy, które będą nam potrzebne do obsługi listy zadań. 
+1. JS pozwala nam nie tylko pracować na istniejących już elementach strony, ale także dodawać elementy albo je usuwać. Właśnie to wykorzystamy w trakcie tego zadania. 
+2. Najpierw przeanalizuj kod HTML. Zobacz, gdzie znajduje się lista, jakie klasy mają elementy, które będą nam potrzebne do obsługi listy zadań. Usuń z kodu HTML przykładowe zadanie dodane do listy zadań.
 3. Stwórz trzy zmienne: przycisk, który będzie dodawał elementy do listy, listę zadań oraz input, do którego wprowadzamy treść zadania i przypisz do nich odpowiednie elementy HTML. Zrób `console.log` i sprawdź, czy wszystkie zmienne są przypisane prawidłowo.
 4. W tym zadaniu wykorzystamy wcześniej już pokazany sposób przypisywania konkretnych funkcji jako `callback`. Będziemy więc tworzyć funkcje z odpowiednimi nazwami, a potem dopiero podawać je jako argument dla `eventListenera`.
 5. Stwórz funckję `addTask()` i następnie podaj ją jako `callback` dla `eventListenera` równego `click` dla przycisku. Twój kod powinien wyglądać w ten sposób:
