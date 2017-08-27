@@ -268,6 +268,10 @@ nav {
   margin-bottom: 4rem;
 }
 
+.slider {
+  list-style: none;
+}
+
 .dot {
   display: inline-block;
   margin-right: 1rem;
@@ -275,6 +279,7 @@ nav {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .dot.active {
