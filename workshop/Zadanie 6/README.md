@@ -10,7 +10,7 @@
 
 Naszym celem jest napisanie obsługi listy zadań znajdującej się w sekcji Plan działania. Chcemy umożliwić użytkownikowi dodanie zadań do listy. Dodatkowo umożliwimy też usuwanie zadań, oznaczanie zadań jako wykonane oraz dodamy walidację pola służącego do wpisywania zadania.
 
-## Instrukcja
+# Instrukcja
 
 Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nich będzie dodawała zadanie do listy i posiadała inne funckjonalności (np. możliwość usuwania zadania). W naszym kodzie powinna znajdowac się tylko finalna funkcja. Zapisujmy tylko to, czego używamy. Oczywiście w ramach ćwiczeń możesz zostaw wszystkie funkcje w kodzie, ale pamiętaj, by unikać tego w realnych projektach. 
 

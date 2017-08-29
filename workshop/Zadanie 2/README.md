@@ -10,7 +10,7 @@
 
 Naszym celem jest sprawienie, by po kliknięciu w przycisk `Więcej` rozwijał się opis pod daną sekcją. Jednocześnie przycisk ma zamienić się na `Mniej` i po kliknięciu chować pokazany wcześniej tekst.
 
-## Instrukcja
+# Instrukcja
 
 1. Poszukaj w kodzie HTML przycisków `Więcej`. Nad każdym z nich widzisz teraz dwa paragrafy. Jeden z nich ma klasę `more`. Ukryj wszystkie paragrafy o klasie `more` przez zmianę `display` na `none` w pliku CSS. Nastepnie w pliku JS zapisz wszystkie przyciski `Więcej` do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Zmienną nazwij np. `buttons`. Wyświetl zmienną w konsoli - powinnaś zobaczyć tablicę z trzema przyciskami. Kod powinien wyglądać mniej więcej w ten sposób:
 ```javascript
@@ -116,7 +116,8 @@ W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma
 ```javascript
     buttons[0].addEventListener('click', showHide);
 ```
-11. Teraz użyjemy pętli `for` do podłączenia funkcji `showHide` do wszystkich przycisków. Przyciski przechowujemy w zmiennej `buttons`, która jest tablicą. Nasza pętla przejdzie przez wszystkie elementy tablicy i na każdym z nich wykona wskazaną przez nas funkcję. Nasz kod będzie teraz wyglądał tak:
+13. Zakomentuj kod przypisania funkcji do pierwszego przycisku, bo przypiszemy ją do wszystkich przycisków korzystając z pętli `for`.
+14. Teraz użyjemy pętli `for` do podłączenia funkcji `showHide` do wszystkich przycisków. Przyciski przechowujemy w zmiennej `buttons`, która jest tablicą. Nasza pętla przejdzie przez wszystkie elementy tablicy i na każdym z nich wykona wskazaną przez nas funkcję. Nasz kod będzie teraz wyglądał tak:
 ```javascript
     // Zaczynamy od pierwszego elementu tablicy, więc zmienną i ustawiamy na 0, bo to indeks pierwszego elementu
     // Kończymy naszą pętlę, gdy i jest równe długości tablicy, tj. przeszło przez wszystkie jej elementy
@@ -125,7 +126,7 @@ W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma
         buttons[i].addEventListener('click', showHide);
     }
 ```
-13. Gotowe! Wewnątrz pętli `for` do każdego elementu tablicy przypisaliśmy `eventListener` nasłuchujący na `click`. Kiedy wykona się `click` zostaje wywołana funckja `showHide`. Cały Twój kod powinien wyglądać tak:
+15. Gotowe! Wewnątrz pętli `for` do każdego elementu tablicy przypisaliśmy `eventListener` nasłuchujący na `click`. Kiedy wykona się `click` zostaje wywołana funckja `showHide`. Cały Twój kod powinien wyglądać tak:
 ```javascript
   var buttons = document.querySelectorAll('.read-more');
 
@@ -146,8 +147,7 @@ W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma
     buttons[i].addEventListener('click', showHide);
   }
 ```
-14. Możesz teraz skasować (albo zakomentować) kod, który napisaliśmy na początku dla jednego przycisku. Pętla sprawia, że możemy ukrywać i pokazywać paragrafy dla wszystkich trzech przycisków.
-15. Jeśli chcesz zobaczyć rozwiązanie zadania, wpisz w konsoli następującą komendę (KONIECZNIE PAMIĘTAJ O COMMICIE NAJPIERW, INACZEJ STRACISZ SWOJE ZMIANY)
+16. Jeśli chcesz zobaczyć rozwiązanie zadania, wpisz w konsoli następującą komendę (KONIECZNIE PAMIĘTAJ O COMMICIE NAJPIERW, INACZEJ STRACISZ SWOJE ZMIANY)
 ```
 git checkout 2-read-more
 ```

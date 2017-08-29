@@ -10,7 +10,7 @@
 
 Naszym celem jest dodanie do kodu HTML przycisku `wróc na górę`, a następnie przypisanie do niego funkcji, która sprawi, że po kliknięciu użytkownik zostanie przeniesiony na górę strony bez konieczności scrollowania całej zawartości ręcznie.
 
-## Instrukcja
+# Instrukcja
 
 1. W kodzie HTML dodaj element `button` z treścią `wróć na górę`. Powinien być widoczny gdzieś na dole strony (np. w stopce). Nadaj mu odpowiednią klasę - sprawdź, jakie klasy mają inne przyciski. Takie klasy jak np. `btn` są klasami Bootstrapa, więc zawierają już jakieś style. Sprawdź róźne klasy. Możesz oczywiście ostylować przycisk w pliku CSS. 
 2. W pliku JS przypisz przycisk do zmiennej i wyświetl zmienną w konsoli, żeby sprawdzić, czy wszystko przebiegło prawidłowo.
