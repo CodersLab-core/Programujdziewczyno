@@ -43,7 +43,7 @@ Zwróć uwagę, że właśnie `event listener` dodaliśmy do całego naszego dok
 
 3. Po dołączeniu `listenera` w funkcji, która jest do niego dołączona (to tzw. `callback`), dodaj `console.log` z jakimś tekstem. Teraz po najechaniu myszką na dany element listy powinnaś zobaczyć tekst z `console.log` w konsoli.
 
-4. W JS możemy wpływać na wygląd elementów przez odwołanie się do `style`. Przykładowo `menu.style` to lista wszystkich stylów elementu przypisanego do zmiennej `menu`. Na początku kodu spróbuj zrobić `console.log`, który pokaże Ci style dla zmiennej z dodatkowym menu. Możesz zobaczyć teraz wszystkie własności CSS danego elementu. 
+4. W JS możemy wpływać na wygląd elementów przez odwołanie się do `style`. Przykładowo `menu.style` to lista wszystkich stylów elementu przypisanego do zmiennej `menu`. Na początku kodu spróbuj zrobić `console.log`, który pokaże Ci style dla zmiennej z dodatkowym menu. Możesz zobaczyć teraz wszystkie własności CSS danego elementu. Ważna uwaga: `style` widzi tylko te style, które zostały przypisane do elementu w skrypcie. Oznacza to, że teraz dostaniesz pustą listę wyświetlając style dla dodatkowego menu.
 
 5. Zajrzyj do pliku CSS. Odnajdź w nim część odpowiedzialną za ostylowanie dodatkowego menu. Zwróć uwagę, na co ustawiony jest `display`.
 
