@@ -9,15 +9,15 @@ Zadanie wykonywane z prowadzącą/prowadzącym
 
 ## Cel zadania
 
-Naszym celem jest sprawienie, by po najechaniu kursorem myszy na sekcję `Materiały do nauki` pojawiało się dodatkowe menu.
+Naszym celem jest sprawienie, by po najechaniu kursorem myszy na część menu górnego z napisem `Materiały do nauki` pojawiało się dodatkowe rozwijane menu z linkami do stron z materiałami.
 
-## Instrukcja
+# Instrukcja
 
 ## Przygotowanie do pracy
 
 1. Stwórz w swoim repozytorium katalog o nazwie `js`, a w nim plik `app.js`.
 2. Podłącz plik JavaScript do strony.
-3. Sprawdź, czy plik działa np. przez wpisanie w nim `console.log('działa')`. Ta wiadomość powinna wyświetlić się w konsoli po wejściu na stronę.
+3. Sprawdź, czy plik działa np. przez wpisanie w nim `console.log('działa');`. Ta wiadomość powinna wyświetlić się w konsoli po wejściu na stronę.
 4. Strona ładuje się "od góry do dołu". Dlatego musimy zadbać o to, by załadowała się cała zawartość kodu HTML, zanim zaczniemy wykonywać na nim jakieś działania. Żeby to zrobić będziemy nasłuchiwać na `event` `DOMContentLoaded`. Ten `event` oznacza, że załadowała się cała struktura strony. Dzięki dodaniu `event listenera` do dokumentu, dopiero po załadowaniu całej struktury DOM, zacznie wykonywać się skrypt z pliku `app.js`. Umieść więc w swoim pliku następujący kod:
 ```javascript
     document.addEventListener('DOMContentLoaded', function() {
@@ -32,9 +32,9 @@ Strict mode robi też kilka innych rzeczy, więcej możesz poczytać <a href="h
 
 Gotowe! Możemy przejść dalej. 
 
-##Dropdown menu
+## Dropdown menu
 
-1. Spójrz na kod HTML i znajdź w nim element, w którym znajduje się dodatkowe menu oraz element listy, na który trzeba najechać myszką, by ta dodatkowa sekcja się pokazała. Następnie zapisz oba elementy do zmiennych(użyj do tego `document.querySelector('nazwa-selektora')`). Sprawdź, czy zrobiłaś to odpowiednio przez wyświetlenie zmiennych w konsoli.
+1. Spójrz na kod HTML i znajdź w nim element, w którym znajduje się dodatkowe menu oraz element listy, na który trzeba najechać myszką, by ta dodatkowa sekcja się pokazała. Następnie zapisz oba elementy do zmiennych (użyj do tego `document.querySelector('nazwa-selektora')`). Pamiętaj, że używamy tutaj selektorów CSS, więc nazwę klasy musimy poprzedzić kropką (np. `.menu`), a nazwę id kratką (np. `#element`). Sprawdź, czy odpowiednio zapisałaś zmienne przez wyświetlenie ich w konsoli.
 
 Pamiętaj: nazywaj zmienne tak, byś wiedziała, jakie elementy się za nimi kryją.
 
@@ -43,13 +43,13 @@ Zwróć uwagę, że właśnie `event listener` dodaliśmy do całego naszego dok
 
 3. Po dołączeniu `listenera` w funkcji, która jest do niego dołączona (to tzw. `callback`), dodaj `console.log` z jakimś tekstem. Teraz po najechaniu myszką na dany element listy powinnaś zobaczyć tekst z `console.log` w konsoli.
 
-4. W JS możemy wpływać na wygląd elementów przez ich atrybut `style`. Na początku kodu spróbuj zrobić `console.log`, który pokaże Ci atrybut `style` dla zmiennej z dodatkowym menu. Możesz zobaczyć teraz wszystkie własności CSS danego elementu. 
+4. W JS możemy wpływać na wygląd elementów przez odwołanie się do `style`. Przykładowo `menu.style` to lista wszystkich stylów elementu przypisanego do zmiennej `menu`. Na początku kodu spróbuj zrobić `console.log`, który pokaże Ci style dla zmiennej z dodatkowym menu. Możesz zobaczyć teraz wszystkie własności CSS danego elementu. 
 
 5. Zajrzyj do pliku CSS. Odnajdź w nim część odpowiedzialną za ostylowanie dodatkowego menu. Zwróć uwagę, na co ustawiony jest `display`.
 
 6. Naszym zadaniem jest zmiana wartości `display` dodatkowego menu z `none` na `block` po najechaniu myszką na element listy. To właśnie będzie ciało funkcji w naszym `listenerze`. Możesz przypisać odpowiednią wartość do własność CSS następująco:
 ```javascript
-element.style.display = 'block'
+element.style.display = 'block';
 ```
 Tak samo możesz wpływać na inne wartości CSS. Dodaj odpowiedni kod do funkcji i sprawdź, czy działa.
 

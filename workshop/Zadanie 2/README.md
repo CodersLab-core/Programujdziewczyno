@@ -12,7 +12,7 @@ Naszym celem jest sprawienie, by po kliknięciu w przycisk `Więcej` rozwijał s
 
 ## Instrukcja
 
-1. Poszukaj w kodzie HTML przycisków `Więcej`. Nad każdym z nich widzisz teraz dwa paragrafy. Jeden z nich ma klasę `more`. Ukryj wszystkie paragrafy o klasie `more` przez zmianę w `display` na `none` w pliku CSS. Nastepnie w pliku JS zapisz wszystkie przyciski `Więcej` do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Wyświetl zmienną w konsoli - powinnaś zobaczyć tablicę z trzema przyciskami.
+1. Poszukaj w kodzie HTML przycisków `Więcej`. Nad każdym z nich widzisz teraz dwa paragrafy. Jeden z nich ma klasę `more`. Ukryj wszystkie paragrafy o klasie `more` przez zmianę w `display` na `none` w pliku CSS. Nastepnie w pliku JS zapisz wszystkie przyciski `Więcej` do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Zmienną nazwij np. `buttons`. Wyświetl zmienną w konsoli - powinnaś zobaczyć tablicę z trzema przyciskami.
 2. Nad każdym przyciskiem znajduje się paragraf o klasie `more` (mimo że teraz jest niewidoczny). Przycisk oraz paragraf mają tego samego rodzica, którym jest nadrzędny dla nich `section`. Są więc rodzeństwem. W JS możemy to wykorzystać. Po kliknięciu w przycisk ma pojawiać się jego poprzedni brat (albo siostra ;)). Żeby sprawdzić, czy faktycznie tak to zadziała, wypisz w konsoli rodzeństwo pierwszego elementu tablicy z przyciskami w ten sposób:
 ```javascript
     console.log(buttons[0].previousElementSibling);
@@ -36,7 +36,7 @@ Naszym celem jest sprawienie, by po kliknięciu w przycisk `Więcej` rozwijał s
 10. Teraz wszystko powinno dobrze działać dla pierwszego przycisku. Chcemy jednak, by dla dwóch pozostałych przycisków też pokazywały się odpowiednie paragrafy. Możemy skopiować kod i podłączyć funckję trzy raz do różnych przycisków, ale byłoby to bezsensowne powtarzanie kodu. Dlatego użyjemy pętli `for` do podłączenia funkcji do wszystkich przycisków jednocześnie. Dzięki odwołaniu się do `this` wewnątrz funkcji, zostanie wybrany odpowiedni paragraf dla danego przycisku.
 11. Najpierw przypiszmy całą funkcję, która była wywoływana przez `click` do funkcji, która nie będzie anonimowa. Wcześniej nasza funckja nie miała nazwy, po prostu od razu wypisywaliśmy jej ciało. Teraz zrobimy to w trochę inny sposób:
 ```javascript
-    function showHide(): {
+    function showHide() {
         // tutaj skopiuj ciało funkcji
     }
 ```
