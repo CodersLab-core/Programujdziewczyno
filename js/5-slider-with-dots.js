@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var dot2 = document.getElementById('dot2');
   var dot3 = document.getElementById('dot3');
 
-  // Solution with separate funtion for every dot
   dot1.addEventListener('click', function() {
     for (var i = 0; i < items.length; i++) {
       items[i].classList.remove('visible');
@@ -36,21 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
     items[2].classList.add('visible');
   });
 
-
-  // Soluton with IIFE - comment the solution above and uncomment the below to see how it works
-  // for (var i = 0; i < dots.length; i++) {
-
-  //   (function(index) {
-  //       dots[i].addEventListener('click', function() {
-
-  //         for (var j = 0; j < items.length; j++) {
-  //           items[j].classList.remove('visible');
-  //           dots[j].classList.remove('active');
-  //         };
-
-  //         items[index].classList.add('visible');
-  //         dots[index].classList.add('active');
-  //       });
-  //   })(i);
-  // }
 });
