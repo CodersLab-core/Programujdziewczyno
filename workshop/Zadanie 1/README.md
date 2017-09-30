@@ -38,7 +38,7 @@ Gotowe! Możemy przejść dalej.
 
 Pamiętaj: nazywaj zmienne tak, byś wiedziała, jakie elementy się za nimi kryją.
 
-2. Teraz zaczynamy z logiką. Chcemy, by po najechaniu myszą na element listy pojawiało się dodatkowe menu. Do tego elementu więc dodamy `event listener`. Będzie to oznaczało tyle, że nasz skrypt będzie teraz nasłuchiwał, czy dany `event` nastąpił. Jeśli tak, zrobi to, co wskażemy mu w kodzie. Dołącz do elementu listy `event listener`, który będzie nasłuchiwał na `hover`, czyli najechanie myszką na dany element. 
+2. Teraz zaczynamy z logiką. Chcemy, by po najechaniu myszą na element listy pojawiało się dodatkowe menu. Do tego elementu więc dodamy `event listener`. Będzie to oznaczało tyle, że nasz skrypt będzie teraz nasłuchiwał, czy dany `event` nastąpił. Jeśli tak, zrobi to, co wskażemy mu w kodzie. Dołącz do elementu listy `event listener`, który będzie nasłuchiwał na `mouseover`, czyli najechanie myszką na dany element. 
 Zwróć uwagę, że właśnie `event listener` dodaliśmy do całego naszego dokumentu na samym początku kodu. Teraz musimy zadziałać analogicznie.
 
 3. Po dołączeniu `listenera` w funkcji, która jest do niego dołączona (to tzw. `callback`), dodaj `console.log` z jakimś tekstem. Teraz po najechaniu myszką na dany element listy powinnaś zobaczyć tekst z `console.log` w konsoli.
