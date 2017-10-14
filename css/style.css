@@ -55,6 +55,7 @@ nav {
   left: 0;
   margin: auto;
   padding: 1rem 4rem 1rem 2rem;
+  width: 200px;
 }
 
 .dropdown ul {
