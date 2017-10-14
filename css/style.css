@@ -87,6 +87,7 @@ nav {
   text-shadow: .2rem .2rem .2rem #424343;
   font-weight: 600;
   font-size: 6rem;
+  margin-bottom: 20px;
 }
 
 .tasks-btn {
@@ -186,12 +187,14 @@ nav {
   font-size: 4rem;
   font-weight: 600;
   color: #fff;
+
 }
 
 .plan-description p {
   font-size: 1.5rem;
   color: #c8cdd1;
   margin-top: 4rem;
+  font-weight: bold;
 }
 
 .list-container {
