@@ -10,3 +10,5 @@
 6. Rób zadania po kolei, ponieważ zostały zaplanowane tak, żeby w kolejnych zadaniach wykorzystywać wiedzę z tych już zrobionych. 
 
 ## Powodzenia!
+
+BIG CHANGE
