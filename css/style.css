@@ -328,3 +328,8 @@ footer p {
 .show-error-msg {
   display: block;
 }
+
+.delete-btn {
+  color: red;
+  font-size: 15px;
+}
