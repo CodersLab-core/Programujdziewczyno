@@ -10,3 +10,9 @@
 6. Rób zadania po kolei, ponieważ zostały zaplanowane tak, żeby w kolejnych zadaniach wykorzystywać wiedzę z tych już zrobionych. 
 
 ## Powodzenia!
+
+BIG CHANGE
+
+BIG CHANGE VOL.2
+
+TEST
